@@ -1,0 +1,4 @@
+la programacion funcional
+es un tipo de programacion declarativa no imperativa
+Funciones puras(programacion funcional)
+es toda aquella que dados unos mismos parametros de entrada produce los mismos parametros de salida
