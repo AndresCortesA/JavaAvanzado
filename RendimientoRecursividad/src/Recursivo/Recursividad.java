@@ -46,8 +46,30 @@ public class Recursividad {
     public static int sumaFuncional(int index){
         // 5 + 4 + 3 + 2 +1
 //        return IntStream.rangeClosed(1, 5).sum();
-        return IntStream.rangeClosed(1, 5).
+        return IntStream.rangeClosed(1, index).
                 reduce(0, (a, b) -> a + b);
     }
+
+    // factorial
+    public static int factorial(int index){
+        int resultado = 1;
+        for (int i = 1; i<= index; i++){
+            resultado = resultado * i;
+        }
+
+        return resultado;
+    }
+
+    public static int factorialRecursivo(int index){
+        if (index == 0){
+            return 1;
+        }
+        return index * factorialRecursivo(index - 1);
+    }
+
+    public static int factorialFuncional(int index){
+        return IntStream.rangeClosed(1, index).reduce(1, (a,b) -> a * b);
+    }
+
 
 }
