@@ -6,4 +6,8 @@ no puede tener cambios que invoquen a una funcion que no es pura
 para que una funcion pura se pueda modificar, solo funciona con su valores locales
 
 programacion recursiva y rendimiento
-
+Recursividad
+una funcion es recursiva cuando se llama asi misma, ¿como hacemos esto?
+la tenemos que llamar, el problema principal sera darle una funcion de parada (sentencia de control)
+extisten dos tipos de recursividad, recursividad de cola(lo ultimo que se ejecuta)
+ :V y recursividad de cabeza() >:)

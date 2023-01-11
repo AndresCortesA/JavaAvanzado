@@ -8,8 +8,8 @@ import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) {
-//        Funcionales f = new Funcionales();
-//        f.pruebas();
+        Funcionales f = new Funcionales();
+        f.pruebas();
         ArrayList<String> nombres = new ArrayList<>();
 
         nombres.add("Paquita");
