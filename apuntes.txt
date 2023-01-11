@@ -3,4 +3,7 @@ es un tipo de programacion declarativa no imperativa
 Funciones puras(programacion funcional)
 es toda aquella que dados unos mismos parametros de entrada produce los mismos parametros de salida
 no puede tener cambios que invoquen a una funcion que no es pura
-para que una funcion pura se pueda modificar, solo funciona con su valores locales  para
+para que una funcion pura se pueda modificar, solo funciona con su valores locales
+
+programacion recursiva y rendimiento
+
