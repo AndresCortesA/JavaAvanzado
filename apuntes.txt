@@ -11,3 +11,31 @@ una funcion es recursiva cuando se llama asi misma, ¿como hacemos esto?
 la tenemos que llamar, el problema principal sera darle una funcion de parada (sentencia de control)
 extisten dos tipos de recursividad, recursividad de cola(lo ultimo que se ejecuta)
  :V y recursividad de cabeza() >:)
+
+Servicio REST
+Un servicio REST es una aplicacion web que cumple una serie de patrones determinados
+- Verbos HTTP (protocolo de peticion)
+- Get (obtiene informacion de un servidor)
+- Post (Envio datos al servidor)
+- Put (Actualizar algo que ya exista con todos los datos que ya existen mas los nuevos)
+- PATCH (Actualiza unicamente los datos que han cambiado)
+- Delete (Eliminar un recurso que ya exista)
+
+Spring boot - errores comunes
+*No se encontraron cargadas las clases principales, por lo que hay que borrar el maven y volve a descargar
+*error en los packages cuando son distintos
+
+MVC - modelo vista controlador 
+*Inyeccion de dependencias
+*Orientado al uso de interfaces
+*Uso de clases POJO 
+
+controllers (spring)
+estos son los encargados de realizar por debajo del programa la parte logica de los inputs de la vista
+y realizar la espeficacion de dicha tarea
+
+models (spring) POJO
+es una clase simple que contiene atributos, como nombres, apellidos, 
+usamos getters para obtener sus valoresy el setter para modificar.
+
+

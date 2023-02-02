@@ -1,5 +1,4 @@
-import java.util.stream.IntStream;
-
+package Recursividad;
 import static Recursivo.Recursividad.*;
 
 public class Main {

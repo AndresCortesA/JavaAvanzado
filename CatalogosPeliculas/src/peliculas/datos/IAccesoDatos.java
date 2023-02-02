@@ -9,7 +9,7 @@ import peliculas.exepciones.LecturaDatosExcepciones;
  * Aqui solo definimos el comportamiento de los recursos
  */
 
-public interface AccesoDatosIF {
+public interface IAccesoDatos {
     boolean Existe(String nombreRecurso) throws AccesoDatosExcepciones;
 
     List<Pelicula> listar(String nombreRecurso) throws LecturaDatosExcepciones;
