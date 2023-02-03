@@ -20,9 +20,7 @@ public class Pelicula {
 
     @Override
     public String toString() {
-        return "{" +
-                " nombre='" + getNombre() + "'" +
-                "}";
+        return this.nombre;
     }
 
 }
