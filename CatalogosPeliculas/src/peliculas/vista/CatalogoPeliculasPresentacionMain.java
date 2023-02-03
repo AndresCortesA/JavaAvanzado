@@ -42,6 +42,8 @@ public class CatalogoPeliculasPresentacionMain {
                     break;
                 default:
                     System.out.println("No reconozco la opcion");
+
+                    scanner.close();
             }
 
         }
