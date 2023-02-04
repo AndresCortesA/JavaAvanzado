@@ -1,0 +1,4 @@
+jdbc\manejo\TestManejoPersonas.class
+jdbc\manejo\datos\PersonaDAO.class
+jdbc\manejo\domain\Persona.class
+jdbc\manejo\datos\Conexion.class
