@@ -11,6 +11,8 @@ public class PersonaDAO {
     // DAO - DATA ACCESS OBJECT
     private static final String SQL_SELECT = "SELECT id_persona, nombre, apellido, email, telefono FROM persona";
     private static final String SQL_INSERT = "INSERT INTO persona (nombre, apellido, email, telefono) VALUES (?,?,?,?)";
+    private static final String SQL_UPDATE = "UPDATE persona SET nombre=?, apellido=?, email=?, telefono=? WHERE id_persona=?";
+    private static final String SQL_DELETE = "DELETE FROM persona WHERE id_persona=?";
 
     public List<Persona> seleccionar() {
         Connection conexion = null;
@@ -71,6 +73,59 @@ public class PersonaDAO {
                 e.printStackTrace(System.out);
             }
 
+        }
+
+        return registros;
+    }
+
+    public int actualizar(Persona persona) {
+        Connection conexion = null;
+        PreparedStatement ps = null;
+        int registros = 0;
+        try {
+            conexion = getConnection();
+            ps = conexion.prepareStatement(SQL_UPDATE);
+            ps.setString(1, persona.getNombre());
+            ps.setString(2, persona.getApellido());
+            ps.setString(3, persona.getEmail());
+            ps.setString(4, persona.getTelefono());
+            ps.setInt(5, persona.getIdPersona());
+
+            registros = ps.executeUpdate();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                close(ps);
+                close(conexion);
+            } catch (SQLException e) {
+                e.printStackTrace(System.out);
+            }
+        }
+
+        return registros;
+    }
+
+    public int eliminar(Persona persona) {
+        Connection conexion = null;
+        PreparedStatement ps = null;
+        int registros = 0;
+        try {
+            conexion = getConnection();
+            ps = conexion.prepareStatement(SQL_DELETE);
+            ps.setInt(1, persona.getIdPersona());
+            registros = ps.executeUpdate();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                close(ps);
+                close(conexion);
+            } catch (SQLException e) {
+                e.printStackTrace(System.out);
+            }
         }
 
         return registros;
